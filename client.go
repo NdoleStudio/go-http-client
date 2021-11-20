@@ -21,7 +21,7 @@ type Client struct {
 	httpClient *http.Client
 	common     service
 	baseURL    string
-	delay int
+	delay      int
 
 	Status *statusService
 }
@@ -36,7 +36,7 @@ func New(options ...Option) *Client {
 
 	client := &Client{
 		httpClient: config.httpClient,
-		delay:  config.delay,
+		delay:      config.delay,
 		baseURL:    config.baseURL,
 	}
 

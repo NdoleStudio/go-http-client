@@ -2,11 +2,12 @@ package client
 
 import (
 	"context"
-	"github.com/NdoleStudio/go-http-client/internal/helpers"
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"testing"
 	"time"
+
+	"github.com/NdoleStudio/go-http-client/internal/helpers"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestStatusService_Ok(t *testing.T) {
