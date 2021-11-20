@@ -29,7 +29,7 @@ import "github.com/NdoleStudio/go-http-client"
 ## Implemented
 
 - [Status Codes](#status-codes)
-    - `GET /200`: Accepted
+    - `GET /200`: OK
 
 ## Usage
 
@@ -62,9 +62,7 @@ if err != nil {
 
 ### Status Codes
 
-#### 200
-
-`GET /200`: Accepted
+#### `GET /200`: OK
 
 ```go
 status, response, err := statusClient.Status.Ok(context.Background())
