@@ -50,7 +50,7 @@ func TestBillsService_OkWithError(t *testing.T) {
 	t.Parallel()
 
 	// Arrange
-	server := helpers.MakeTestServer(http.StatusInternalServerError, "Internal Server Error")
+	server := helpers.MakeTestServer(http.StatusInternalServerError, []byte("Internal Server Error"))
 	client := New(WithBaseURL(server.URL))
 
 	// Act
